@@ -1,219 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morph-Cut</title>
+</head>
+<style>
+    body {
+        background-color: rgb(20, 122, 0);
+        margin-top: 40px;
         
-        body {
-            margin: 0;
-            margin-left: 4px;
-            padding: 0;
-            width: 1870px;
-        }
-        
-        #myVideo {
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          min-width: 100%; 
-          min-height: 100%;
-        }
+    }
 
-        #namevideo {
-        position: relative;
-        right: 30;
-        bottom: 50;
-        width:20% ; 
-        height: auto;
-      
-            
-        }
+    p {
+        color: rgb(115, 255, 0);
+        outline-color: solid black;
+        outline-width: 2px;
+    }
 
-        #logovideo {
-            align-self: fixed;
-            mix-blend-mode: darken;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            min-width: 5%; 
-            min-height: 5%;
-            zoom: 70%;
-            margin-left: 220pt;
-            margin-top: -100pt;
-        }
-        
-        .logosho {
-            position: absolute;
-            width: auto;  
-            display:block;
-            overflow:hidden;
-            align-content: right;
-            height: auto;
-            margin-left: 250px;
-            padding: 0;
-            margin-top: -170px;
-            mix-blend-mode: darken;
-                }
+    .hey {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border: solid rgb(43, 255, 0);
+        position: center;
+        margin-left: 45%;
+        margin-right: 10%;
+        font-family: forrelease;
+        font-size: 50px;
+        border-width: 2px;
+        text-decoration: none;
+        width: 10px;
+    }
 
-        .name {
-            position: fixed;
-            height: auto;
-            display: block;
-            align-content: left;
-            mix-blend-mode: darken;
-            padding: 0;
-            margin-top: -9.5vh;
-                }
+    .hey2 {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: center;
+    }
 
-        .hey {
-            position: fixed;
-        }
-
-        @font-face {
+    @font-face {
                 font-family: forrelease;
                 src: url(FLATPACK.TTF);
                 }
 
-        @font-face {
-                font-family: mehmet;
-                src: url(Mehmet-Regular.otf);
-                }
-
-        p {
-            position: relative;
-            text-align: justify;
-            font-size: 20px;
-            margin-top: 70px;
-            color: rgb(0, 0, 0);
-            width: 280px;
-            font-family: forrelease;
-            }
-
-            .paragraf 
-                {font-size: 120pt;
-                position: absolute;
-                margin-top: -150px;
-                align-content: right;
-                color: aliceblue;
-                margin-left: 320px;
-                width: 200vh;}
-
-                .paragraf2
-                {font-size: 120pt;
-                position: absolute;
-                margin-top: -150px;
-                font-style: italic;
-                align-content: right;
-                color: aliceblue;
-                margin-left: 320px;
-                width: 200vh;}
-
-                .hey {
-                    position: absolute;
-                    width: 20%;
-                    margin-top: -70px;
-                }
-
-                .hey2 {
-                    position: static;
-                    margin-left: 3px;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 89%;
-                    transition-duration: 3s;
-                }
-
-                a:hover {
-                    color: black;
-                                 }
-
-                .hey3 {
-                    block-size: 20%;
-                }
-
-        </style>
-        </head>
-        <body>
-            <img id="myVideo" src="bg.gif" alt="">
-          
-
-        <div class="name">
-                <video video autoplay="true"  autoplay muted loop id="namevideo">
-              <source class="name" src="logofinall.mp4" type="video/mp4">
-                <script>
-                    var vid = document.getElementById("namevideo");
-                    vid.playbackRate = 2.5; 
-                </script>
-            </video>
-        </div>
+    .hello {
+        position: absolute;
+        width: 1200px;
+        height: 100px;
+        margin-top: -200px;
+        mix-blend-mode: ;
+    
+    }
 
 
-        <div class="content">
+    img {
+        position: absolute;
 
-               <p> 
-                When one is ready to metamorphose, it stops feeding and makes its way to the surface, generally at night. It adapts to  reality with its head out of the water, while its respiration system evolves to utilize digital layers.
-                Morph-Cut is a path to change and project your identity. Characters no longer remain permanent in our stories. Their physical and emotional layers are constantly reshaped together with the environment. Morph-Cut is a powerful tool to change the perception of us, giving previously unrelated and random events profound connections and helping build the fundamental structures of both: the world we live in and the virtual. 
-                Be whoever and wherever you want through our unstable fantasy sequence. 
+    }
 
-                </p>
-            </div>
+    a {
+        position: absolute;
+        mix-blend-mode: difference;
+    }
 
-       
+    .yoyo {
+        margin-top: 40%;
+    }
+
+    .imageaaa {
+        mix-blend-mode: darken;
+        width: 400px;
+        height: 400%;
+        margin-top: -800px;
+
+    }
+
+    @media (max-width: 767px) {}
+
+</style>
+
+<body>
+   
+  <div>
+      <img class="imageaaa" src="abstractanimation.gif" alt="">  
+    </div>
+
+    <a class="hey" a href="google.com">
+        <p a href="google.com"> mobile</p>
+    </a>
 
 
-            <!-- Use a button to pause/play the video with JavaScript -->
-            <button id="myBtn" onclick="myFunction()">Pause</button>
-          </div>
-s
-          <div class="logosho">
-              <video video autoplay="true"  autoplay muted loop id="logovideo">
-            <source class="trial" src="logocropped.mp4" type="video/mp4">
-          </video>
-        </div>
-        
-        <p id="demo" class="paragraf2"></p>
 
-                    <script class="color">
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("Oct 28, 2020 13:28:40").getTime();
+    <a class="hey yoyo" a href="websiteworkshop.html">
+        <p a href="google.com">web</p>
+    </a>
 
-                    // Update the count down every 1 second
-                    var x = setInterval(function() {
-
-                    // Get today's date and time
-                    var now = new Date().getTime();
-                        
-                    // Find the distance between now and the count down date
-                    var distance = countDownDate - now;
-                        
-                    // Time calculations for days, hours, minutes and seconds
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                        
-                    // Output the result in an element with id="demo"
-                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                    + minutes + "m " + seconds + "s ";
-                        
-                    // If the count down is over, write some text 
-                    if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = "SEE THE SHOW";
-                        var str = "CLICK TO STREAM" ;
-                        var result = str.link("https://www.flickr.com/photos/14070145@N06/5416412618/player/df5e12bbf8");
-                        document.getElementById("demo").innerHTML = result ;
-                        var p = document.getElementById('demo')
-                        p.style.textDecoration = 'none' ;
-
-                    }
-                    }, 1000);
-
-        
-                    </script>
-
-        </body>
+    
+   
+</body>
 </html>
